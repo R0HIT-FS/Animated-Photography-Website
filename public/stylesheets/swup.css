@@ -1,0 +1,123 @@
+.transition-fade{
+    opacity:1;
+    transition: 1s;
+    transform:translateY(0);
+     background-color: #151515;
+}
+
+html{
+    background-color: #151515;
+}
+html.is-leaving .transition-fade{
+    opacity:0;
+}
+html.is-animating .transition-fade{
+    opacity:0;
+}
+
+.transition-overlap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: black;
+    height: 200vh;
+    pointer-events: none;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+
+  html.is-rendering .transition-overlap{
+    transform: translateY(-100%);
+  }
+  /* html.is-animating .transition-overlap{
+    transform: translateY(-100%);
+  } */
+  html.is-leaving .transition-overlap{
+    transform: translateY(-100%);
+  }
+
+  html.is-changing .transition-overlap{
+    transition: transform 3.5s ease-out;
+    opacity: 1;
+  }  
+
+
+
+  
+#scam{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  gap: 2vw;
+  z-index: 999;
+}
+#first,#second,#third{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 9vw;
+}
+
+#web path:nth-child(1){
+  stroke-dasharray: 413px;
+  stroke-dashoffset: 413px;
+}
+#web path:nth-child(2){
+  stroke-dasharray:334px;
+  stroke-dashoffset:334px;
+}
+#web path:nth-child(3){
+  stroke-dasharray:462px;
+  stroke-dashoffset:462px;
+}
+#web path:nth-child(4){
+  stroke-dasharray:413px;
+  stroke-dashoffset:413px;
+}
+#web path:nth-child(5){
+  stroke-dasharray:202px;
+  stroke-dashoffset:202px;
+}
+#web path:nth-child(6){
+  stroke-dasharray:418px;
+  stroke-dashoffset:418px;
+}
+#web path:nth-child(7){
+  stroke-dasharray:413px;
+  stroke-dashoffset:413px;
+}
+#web path:nth-child(8){
+  stroke-dasharray:347px;
+  stroke-dashoffset:347px;
+}
+#web path:nth-child(9){
+  stroke-dasharray:425px;
+  stroke-dashoffset:425px;
+}
+#web path:nth-child(10){
+  stroke-dasharray:413px;
+  stroke-dashoffset:413px;
+}
+#web path:nth-child(11){
+  stroke-dasharray:437px;
+  stroke-dashoffset:437px;
+}
+#web path:nth-child(12){
+  stroke-dasharray:413px;
+  stroke-dashoffset:413px;
+}
+#web path:nth-child(13){
+  stroke-dasharray:577px;
+  stroke-dashoffset:577px;
+}
